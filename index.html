@@ -19,20 +19,22 @@
     <![endif]-->
   </head>
   <body>
-  	<p>I'm thinking of a <b>number</b> between <b>1-100</b>.</p>
-  	<p>Care to guess what it is?</p>
+  	<p>I'm thinking of a <b class="number">number</b> between <b class="number">1-100</b>.</p>
+  	<p>Can you guess what it is?</p>
     <!-- Input field -->
-    <label>guess(<input type="text" value="//Your guess goes here">);</label>
-    <p>stdout:</p>
+    <label>stdin: <input id="guess" type="text" maxlength="30" value="//Your guess goes here"></label>
+    <p id="output">stdout: <b class="output"></b></p>
+    <p id="error">stderr: <b class="output"></b></p>
     <nav>
     <!-- Buttons -->
-    <button>Run code</button>
-    <button>Ugh, I give up!</button>
-    <button>Try again</button>
+    <button class="submit">Run code</button>
+    <button class="hint">Hint</button>
+    <button class="again">Play again</button>
     </nav>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/guessingGame.js"></script>
   </body>
 </html>

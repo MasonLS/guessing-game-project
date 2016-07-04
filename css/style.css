@@ -10,21 +10,14 @@ p {
 	margin-top: 40px;
 }
 
-
-b {
+.number {
 	color: rgb(174, 129, 255);
 	font-weight: normal;
 }
 
-label {
-	color: rgb(102, 217, 231);
-	margin-top: 80px;
-	font-weight: normal;
-}
-
 input {
-	display: inline;
-	width: 650px;
+	margin-top: 80px;
+	width: 900px;
 	color: rgb(117, 113, 94);
 	background-color: rgb(39, 40, 34);
 	border: none;
@@ -32,6 +25,14 @@ input {
 
 input:focus {
 	outline: none;
+}
+
+.output, label {
+	font-weight: normal;
+}
+
+#error {
+	display: none;
 }
 
 nav {
@@ -42,6 +43,7 @@ button {
 	background-color: rgb(117, 113, 94);
 	border: none;
 	padding: 0 20px 0 20px;
+	margin-right: 10px;
 }
 
 button:focus {
